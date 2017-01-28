@@ -1,0 +1,24 @@
+{
+    "name": "geekdoos/geekdoos",
+    "description": "This is a simple framework for simple project from geekdoos team",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "KHACHIAI Oussama",
+            "email": "oussama.khachiai@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9"
+
+    },
+    "require-dev": {
+
+    }
+}

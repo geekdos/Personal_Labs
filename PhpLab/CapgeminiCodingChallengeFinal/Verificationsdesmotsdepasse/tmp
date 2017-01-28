@@ -1,0 +1,13 @@
+        $lenth = strlen($data);
+        $test = preg_match("#[A-Z]#", $data)
+            + preg_match("#[a-z]#", $data)
+            + preg_match("#[0-9]#", $data)
+            + preg_match("#[\\-\\_\\@\\.]#", $data)
+            + preg_match("#[^a-zA-Z0-9]#", $data);
+        if($test == 5){
+            $resp = 'YES';
+        }else{
+            $resp = 'NO';
+        }
+
+        printf("%s\n", $resp);

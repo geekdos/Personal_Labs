@@ -1,0 +1,5 @@
+4\n
+ab 4\n
+k 1\n
+cool 8\n
+code 32\n
