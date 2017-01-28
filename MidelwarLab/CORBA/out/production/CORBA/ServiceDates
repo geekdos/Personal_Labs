@@ -1,0 +1,29 @@
+module Application{
+    module ServiceDates{
+        typedef unsigned short Jours;
+        enum Mois {
+            Janvier, Février, Mars, Avril, Mai, Juin,
+            Juillet, Août, Septembre, Octobre, Novembre, Décembre
+        };
+        typedef unsigned short Annee;
+        struct Date {
+            Jours le_jours;
+            Mois le_mois;
+            Annee l_annee;
+        };
+
+        typedef sequence<Date> les_dates;
+        interface Calandrier {
+            attribute Annee annee_courante;
+            boolean verifier_un_date(inout Date);
+            void le_jours_suivant(in Date);
+            exception DateErronnee{ string raison; };
+            Date Convertir_chaine(in string chaine) raises (DateErronnee);
+        };
+
+        interface CalandrierFerie{
+            void les_jours_ferier(in Annee de_l_annee, out Date desDate);
+        };
+
+    };
+};

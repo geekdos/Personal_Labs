@@ -1,0 +1,7 @@
+interface Euro{
+    attribute string Devise;
+    attribute float Taux;
+
+    float toEuro(in float devise);
+    float toDevise(in float euro);
+};

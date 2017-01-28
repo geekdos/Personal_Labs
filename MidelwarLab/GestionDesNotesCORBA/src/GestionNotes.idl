@@ -1,0 +1,17 @@
+module geekdos{
+    struct Etudiant {
+          float note1 ;
+          float note2;
+          string nom ;
+          string prenom;
+          string cne;
+    };
+    typedef sequence <Etudiant> etudiants;
+    interface GestionNotesInterface {
+        void ajouterEtudiant(in Etudiant e);
+        float getNote(in string cne);
+        etudiants getEtudiantsTries();
+        etudiants getValidant();
+        Etudiant getMajorant();
+    };
+};

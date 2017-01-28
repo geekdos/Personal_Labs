@@ -1,0 +1,19 @@
+module msg {
+    typedef long int;
+    struct Date{
+        int year; int month;
+        int day; int hour;
+        int min; int sec;
+    };
+    struct Message{
+        string client;
+        string subject;
+        string corps;
+        Date date;
+    };
+    interface Messenger{
+        int signup();
+        void submit(in int id, in Message msg);
+        Message consult(in int id);
+    };
+};

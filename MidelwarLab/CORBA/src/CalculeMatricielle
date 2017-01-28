@@ -1,0 +1,11 @@
+module Application{
+    module CalculeMatricielle{
+        typedef sequence<float> Linges;
+        typedef sequence<Linges> Matrice;
+        interface Matrices{
+            Matrice ajouter(in Matrice m1, in Matrice m2);
+            Matrice Multiplier(in Matrice m1, in Matrice m2);
+        };
+
+    };
+};
