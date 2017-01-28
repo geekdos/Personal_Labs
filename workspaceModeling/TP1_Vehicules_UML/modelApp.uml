@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ao3fMMhqEeaPRtcG76e-Pw" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ao3fMchqEeaPRtcG76e-Pw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_p3rg0MhsEeaPRtcG76e-Pw" name="Personnel">
+    <ownedTemplateSignature xmi:type="uml:TemplateSignature" xmi:id="_117JUNLREeaTeuCv1Pxc_Q"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jw-BQMhsEeaPRtcG76e-Pw" name="Client">
+      <generalization xmi:type="uml:Generalization" xmi:id="_GVch8MhtEeaPRtcG76e-Pw" general="_fOlGEMhqEeaPRtcG76e-Pw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ig9OUNkjEeaCVKjkI2vazw" name="voiture" type="_cLKRAMhtEeaPRtcG76e-Pw" association="_Ig6yENkjEeaCVKjkI2vazw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fOlGEMhqEeaPRtcG76e-Pw" name="Personne">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_L5OeIMhuEeaPRtcG76e-Pw" name="nom" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NVKQoMhuEeaPRtcG76e-Pw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NVKQochuEeaPRtcG76e-Pw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_NVLewMhuEeaPRtcG76e-Pw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QS2w0MhuEeaPRtcG76e-Pw" name="prenom" visibility="protected" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QmyZcMhuEeaPRtcG76e-Pw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qm0OoMhuEeaPRtcG76e-Pw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Qm1cwMhuEeaPRtcG76e-Pw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SY_98MhuEeaPRtcG76e-Pw" name="age" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SqVlkMhuEeaPRtcG76e-Pw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SqWzsMhuEeaPRtcG76e-Pw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_SqXawMhuEeaPRtcG76e-Pw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0hqXQMhsEeaPRtcG76e-Pw" name="Mecanicien">
+      <generalization xmi:type="uml:Generalization" xmi:id="_JJ4YcMhtEeaPRtcG76e-Pw" general="_fOlGEMhqEeaPRtcG76e-Pw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4YqVENkiEeaCVKjkI2vazw" name="panne" type="_qx6lwNKDEeaTeuCv1Pxc_Q" association="_4YjAUNkiEeaCVKjkI2vazw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OjjC4dkjEeaCVKjkI2vazw" name="piecesDeRechange" type="_K2_PUNKFEeaTeuCv1Pxc_Q" association="_Ojh0wNkjEeaCVKjkI2vazw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_95ykQMhsEeaPRtcG76e-Pw" name="ChefDAgence">
+      <generalization xmi:type="uml:Generalization" xmi:id="_IFh_gMhtEeaPRtcG76e-Pw" general="_fOlGEMhqEeaPRtcG76e-Pw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_86Gf8dkiEeaCVKjkI2vazw" name="agence" type="_wlRg8NKCEeaTeuCv1Pxc_Q" association="_86EDsNkiEeaCVKjkI2vazw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_54_oUMhsEeaPRtcG76e-Pw" name="Fournisseur">
+      <generalization xmi:type="uml:Generalization" xmi:id="_J8FRcMhtEeaPRtcG76e-Pw" general="_fOlGEMhqEeaPRtcG76e-Pw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_OUVrIMhtEeaPRtcG76e-Pw" name="OperationsVehicules">
+    <packagedElement xmi:type="uml:Class" xmi:id="_wlRg8NKCEeaTeuCv1Pxc_Q" name="Agence">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_H8Ct8tkkEeaCVKjkI2vazw" name="client" type="_jw-BQMhsEeaPRtcG76e-Pw" association="_H8Bf0NkkEeaCVKjkI2vazw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qx6lwNKDEeaTeuCv1Pxc_Q" name="Panne"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_K2_PUNKFEeaTeuCv1Pxc_Q" name="PiecesDeRechange"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O1SQ4NKFEeaTeuCv1Pxc_Q" name="Parcking">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__UDH8NkkEeaCVKjkI2vazw" name="nbrVoitures" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_cLKRAMhtEeaPRtcG76e-Pw" name="Voiture">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mc62UNkkEeaCVKjkI2vazw" name="marque" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_r30_0NkkEeaCVKjkI2vazw" name="model" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_duyBgNkkEeaCVKjkI2vazw" name="demarer">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_1Y1CEN5gEeaQnJT6Akrl2w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPnRkN5kEeaQnJT6Akrl2w" name="prix">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_hLxs0NkkEeaCVKjkI2vazw" name="arreter" concurrency="guarded">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_5RFtEN5gEeaQnJT6Akrl2w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4YjAUNkiEeaCVKjkI2vazw" name="enregistrer" memberEnd="_4YqVENkiEeaCVKjkI2vazw _4Yq8INkiEeaCVKjkI2vazw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4Yn40NkiEeaCVKjkI2vazw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4Yof4NkiEeaCVKjkI2vazw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4Yq8INkiEeaCVKjkI2vazw" name="mecanicien" type="_0hqXQMhsEeaPRtcG76e-Pw" association="_4YjAUNkiEeaCVKjkI2vazw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_86EDsNkiEeaCVKjkI2vazw" name="gere" memberEnd="_86Gf8dkiEeaCVKjkI2vazw _86IVINkiEeaCVKjkI2vazw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_86F44NkiEeaCVKjkI2vazw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_86Gf8NkiEeaCVKjkI2vazw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_86IVINkiEeaCVKjkI2vazw" name="chefDAgence" type="_95ykQMhsEeaPRtcG76e-Pw" association="_86EDsNkiEeaCVKjkI2vazw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ig6yENkjEeaCVKjkI2vazw" name="consulter" memberEnd="_Ig9OUNkjEeaCVKjkI2vazw _Ig91YNkjEeaCVKjkI2vazw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ig8AMNkjEeaCVKjkI2vazw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ig8nQNkjEeaCVKjkI2vazw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ig91YNkjEeaCVKjkI2vazw" name="client" type="_jw-BQMhsEeaPRtcG76e-Pw" association="_Ig6yENkjEeaCVKjkI2vazw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ojh0wNkjEeaCVKjkI2vazw" name="affecter" memberEnd="_OjjC4dkjEeaCVKjkI2vazw _Ojjp8NkjEeaCVKjkI2vazw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ojib0NkjEeaCVKjkI2vazw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OjjC4NkjEeaCVKjkI2vazw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ojjp8NkjEeaCVKjkI2vazw" name="mecanicien" type="_0hqXQMhsEeaPRtcG76e-Pw" association="_Ojh0wNkjEeaCVKjkI2vazw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_a1sZoNKDEeaTeuCv1Pxc_Q" name="Electricien">
+    <generalization xmi:type="uml:Generalization" xmi:id="_feDE0NKDEeaTeuCv1Pxc_Q" general="_fOlGEMhqEeaPRtcG76e-Pw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_H8Bf0NkkEeaCVKjkI2vazw" name="Contart" memberEnd="_H8Ct8tkkEeaCVKjkI2vazw _H8D8ENkkEeaCVKjkI2vazw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_H8Ct8NkkEeaCVKjkI2vazw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_H8Ct8dkkEeaCVKjkI2vazw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_H8D8ENkkEeaCVKjkI2vazw" name="agence" type="_wlRg8NKCEeaTeuCv1Pxc_Q" association="_H8Bf0NkkEeaCVKjkI2vazw"/>
+  </packagedElement>
+</uml:Model>

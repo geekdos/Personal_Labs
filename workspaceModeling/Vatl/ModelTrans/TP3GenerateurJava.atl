@@ -1,0 +1,8 @@
+query TP3GenerateurJava = 
+		thisModule.myInformations('Hakima','DAOUDI', 23,'Meknes','ENSAF','GINFO3','Bonjour2')
+		and
+		MetatModule!Class.allInstances()->forAll(class | class.content().writeTo('D:/Labs/workspaceModeling/AppGenere/src/'+class.name+'.java'))
+	;
+uses TP3Lib;
+
+-- query TP3GenerateurJava = MetatModule!Enumeration.allInstances()->iterate(enum; acc : String = '' | acc + enum.name).writeTo('D:/Labs/workspaceModeling/AppGenere/src/Enum.java')

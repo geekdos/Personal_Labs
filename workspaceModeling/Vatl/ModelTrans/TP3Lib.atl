@@ -1,0 +1,137 @@
+library TP3Lib;
+
+helper def : header(releaseBy : String, pilotedBy : String, date : String) : String = 
+	'/**\n* Encadré par : '+pilotedBy+'\n* Réalisé par : '+releaseBy+'\n* Date : '+date+'\n*/\n\n'
+	 
+	;
+
+
+helper 
+	context MetatModule!Class
+	def : content() : String = 
+	thisModule.header('Oussama KHACHIAI', 'M. Youness LAKHRISSI', '12/02/2017')+'public class '+self.name+'{\n\n'
+		+self.generateAttributes()
+		+self.defaultContstruct()
+		+if self.ownedAttribute->notEmpty() then
+			self.contstructWhitAllParams()
+		else
+			''
+		endif
+		+self.getters()
+		+self.setters()
+		+self.operations()
+		+self.toString()
+		+'\n\n} // Fin de la class '+self.name
+	;
+
+helper 
+	context MetatModule!Class
+	def : defaultContstruct() : String = 
+		'\n\t//Le constructeur\n\tpublic '
+		+self.name+'(){\n\t\t'
+		+self.intialisation()
+		
+		+'\n\t}\n';
+
+helper 
+	context MetatModule!Class
+	def : contstructWhitAllParams() : String = 
+		'\n\t//Le constructeur\n\tpublic '
+		+self.name+'('+self.allParams()+'){\n'
+		+self.initParams()
+		+'\n\t}\n';
+
+helper 
+	context MetatModule!Class
+	def : allParams() : String = 
+		self.ownedAttribute->iterate(it; acc: String = '' |  acc+ if acc <> '' then ', ' else '' endif +it.cleanType()+' '+it.name)
+;
+
+helper 
+	context MetatModule!Class
+	def : initParams() : String = 
+		self.ownedAttribute->iterate(it; acc: String = '' |  acc+ '\t\tthis.'+it.name+' = '+it.name+';\n')
+	;
+
+	
+helper 
+	context MetatModule!Class
+	def : generateAttributes() : String = 
+		'\t\t//La liste des attributes\n'
+		+self.ownedAttribute->iterate(it; acc: String = '' | acc+'\t\t'+it.visibility+' '+it.cleanType()+' '+it.name+';\n ')
+	;
+
+helper 
+	context MetatModule!Class
+	def : getters() : String = '\n\t//La liste des getters\n'
+		+self.ownedAttribute->iterate(it; acc: String = '' | acc+'\tpublic '+it.cleanType()+' get'+it.name.nomCorrect()+'(){\n'
+		+'\t\treturn this.'+it.name+';\n\t}\n ')
+	;
+
+helper 
+	context MetatModule!Class
+	def : setters() : String = '\n\t//La liste des setters\n'
+		+self.ownedAttribute->iterate(it; acc: String = '' | acc+'\tpublic void set'+it.name.nomCorrect()+'('+it.cleanType()+' '+ it.name +'){\n'
+		+'\t\t this.'+it.name+' = '+it.name+';\n\t}\n ')
+	;
+
+helper 
+	context MetatModule!Property
+	def : cleanType() : String = 
+		if 
+			not(self.type.oclIsUndefined()) and self.type.name = 'EString' then 'String' 
+			else if 
+				not(self.type.oclIsUndefined()) and self.type.name = 'EInt' then 'int'
+			else 
+				self.type.name
+			endif
+		endif;
+
+helper 
+	context MetatModule!Class
+	def : intialisation() : String = '\n\t\t//Initialisation\n'
+		+self.ownedAttribute->iterate(att; acc: String = '' | acc +
+		if att.cleanType() = 'String' then '\t\tthis.'+att.name+' = "";\n' else if att.cleanType() = 'int' then '\t\tthis.'+att.name+' = 0;\n' else  '' endif endif
+	)
+	;
+
+helper 
+	context MetatModule!Class
+	def : operations() : String = '\n\t//Les oprerations\n'
+		+self.ownedOperation->iterate(op; acc: String = '' | acc
+		+'\n\t'+op.visibility+' '+op.type.name+' '+op.name+'('+if op.ownedParameter->notEmpty() then op.params() else '' endif +'){\n'
+		+'\t\treturn "";'
+		+'\n\t}'
+	)
+	;
+
+helper 
+	context MetatModule!Operation
+	def : params() : String = ''
+		+self.ownedParameter->iterate(param; acc: String = '' | acc 
+		+if acc <> '' then ', ' else '' endif 
+		+if param.direction = #return then '' else
+			param.type.name+' '+param.name		
+		endif
+	);
+
+helper
+	context MetatModule!Operation
+	def : toString() : String = '\n\t\t//Initialisation\n public String toString(){'
+		+self.ownedAttribute->iterate(att; acc: String = '' | acc
+		+'"'+att.name+'" = '+att.value
+	)+'\n\t}'
+	;
+	
+helper  
+	def : myInformations(firstName : String, lastName : String, age : Integer, city  : String, school : String, section : String, fileName : String) : String = 
+			('Hi my name is '+firstName +' '+lastName+' \n Im '+age+' years Old \n Im from '+city+' and Im Studing At '+school+' '+section).writeTo('D:/Labs/workspaceModeling/Hakima/'+fileName+'.txt');
+
+helper
+	context String
+	def : nomCorrect() : String = self.substring(1, 1).toUpper() + self.substring(2, self.size()).toLower();
+	
+helper 
+	context String
+	def : skipeSepecialChars() : String = self.toSequence()->iterate(char; acc: String = '' | acc);
+

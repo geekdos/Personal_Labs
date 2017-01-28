@@ -1,0 +1,114 @@
+-- @nsURI UML5=http://www.eclipse.org/uml2/5.0.0/UML
+
+module M2M;
+create OUT : UML5 refining IN : UML5;
+
+--rule R1{
+	--from x: UML5!Class
+	--to y: UML5!Class(name<-x.name+x.name)
+--}
+
+--rule R2{
+--	from x: UML5!Class
+--	to y: UML5!Class(name<-x.name.toUpper())
+--}
+
+--rule R3{
+--	from x: UML5!Class
+--	to y: UML5!Class(name<-x.name.substring(1, 1).toUpper()+x.name.substring(2, x.name.size()).toLower())
+--}
+
+--rule R32{
+--	from x: UML5!Class
+--	to y: UML5!Class(name<-x.name.nomCorrect())
+--}
+
+--rule R33{
+--	from x: UML5!Class
+--	to y: UML5!Class(name<-x.nomCorrect())
+--}
+
+--rule R41{
+--	from x: UML5!Class(x.name.substring(1, 1).toLower() = 'p' )
+--	to y: UML5!Class(name<-x.name+'Oussama')
+--}
+
+--
+--rule R42{
+--	from x: UML5!Class(x.name.substring(1, 1).toLower() <> 'p' )
+--	to y: UML5!Class(name<-x.name+'KHACHIAI')
+--}
+
+--rule R43{
+--	from x: UML5!Class
+--	to y: UML5!Class(name<-x.name + if x.name.substring(1, 1).toLower() <> 'p' then 'KHACHIAI' else 'Oussama' endif)
+--}
+
+--rule R5{
+--	from x: UML5!Class
+--	to y: UML5!Class(name<-x.name.reverse().nomCorrect())
+--}
+
+--rule R6{
+--	from x: UML5!Property(not(x.class.oclIsUndefined()))
+--	to y: UML5!Property(visibility <- #protected)
+--}
+
+--rule R61{
+--	from x: UML5!Property
+--	to y: UML5!Property(name<-x.name.reverse())
+--}
+
+--rule R7{
+--	from x: UML5!Operation
+--	to y: UML5!Operation(visibility <- #public, name<-x.name.reverse().nomCorrect())
+--}
+
+--rule R8{
+--	from x: UML5!Property(not(x.class.oclIsUndefined()))
+--	to h: UML5!Property(),
+--	   y: UML5!Operation(visibility <- #public, name<-'set'+x.name.nomCorrect(), class<-x.class),
+--	   z: UML5!Operation(visibility <- #public, name<-'get'+x.name.nomCorrect(), class<-x.class)
+--}
+
+--rule R9{
+--	from x: UML5!Class
+--	to h: UML5!Class(),
+--	   y: UML5!Operation(visibility <- #public, name<-'afficher', class<-x)
+--}
+--
+--rule R10{
+--	from x: UML5!Property(not(x.class.oclIsUndefined()) and x.visibility = #private)
+--	to h: UML5!Property(),
+--	   y: UML5!Operation(visibility <- #public, name<-'set'+x.name.nomCorrect(), class<-x.class),
+--	   z: UML5!Operation(visibility <- #public, name<-'get'+x.name.nomCorrect(), class<-x.class)
+--}
+
+rule R11{
+	from x: UML5!Class
+	to y: UML5!Class(name<-x.renameStryClass())
+}
+
+helper
+	context String
+	def : reverse() : String = 
+			self.toSequence() -> iterate(c; invers: String = '' | c + invers);
+
+helper
+	context String
+	def : nomCorrect() : String = if self <> '' then  self.substring(1, 1).toUpper()+self.substring(2, self.size()).toLower() else '' endif;
+
+helper
+	context UML5!Class
+	def : nomCorrect() : String = self.name.substring(1, 1).toUpper() + self.name.substring(2, self.name.size()).toLower();
+
+helper
+	context UML5!Class
+	def : renameStryClass() : String = 
+		if 
+			not(self.getAppliedStereotypes() -> isEmpty()) then self.name+ self.getAppliedStereotypes() -> iterate(steryp; acc: String = '' | acc +'_'+steryp.name)
+		else
+			self.name+'_normale'
+		endif
+		;
+	

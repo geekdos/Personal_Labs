@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_XhybgMhUEeaPRtcG76e-Pw" name="Profile" metaclassReference="_DgpL8MhVEeaPRtcG76e-Pw _8yr-0MhXEeaPRtcG76e-Pw" metamodelReference="_XhybgchUEeaPRtcG76e-Pw">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uLIDEMhYEeaPRtcG76e-Pw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_uLIqIMhYEeaPRtcG76e-Pw" name="Profile" nsURI="http:///schemas/Profile/_uLE_wMhYEeaPRtcG76e-Pw/0" nsPrefix="Profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uLMUgMhYEeaPRtcG76e-Pw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uLMUgchYEeaPRtcG76e-Pw" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uLMUgshYEeaPRtcG76e-Pw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uLMUg8hYEeaPRtcG76e-Pw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uLMUhMhYEeaPRtcG76e-Pw" key="Date" value="2016-12-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uLMUhchYEeaPRtcG76e-Pw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uLIqIchYEeaPRtcG76e-Pw" name="Table">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uLIqIshYEeaPRtcG76e-Pw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oJ9HoMhUEeaPRtcG76e-Pw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uLIqI8hYEeaPRtcG76e-Pw" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uLIqJchYEeaPRtcG76e-Pw" name="PrimaryKey">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uLIqJshYEeaPRtcG76e-Pw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rIfVUMhUEeaPRtcG76e-Pw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uLIqJ8hYEeaPRtcG76e-Pw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uLIqKchYEeaPRtcG76e-Pw" name="ForeignKey">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uLIqKshYEeaPRtcG76e-Pw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tIYwgMhUEeaPRtcG76e-Pw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uLIqK8hYEeaPRtcG76e-Pw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_DgpL8MhVEeaPRtcG76e-Pw" alias="Class">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_8yr-0MhXEeaPRtcG76e-Pw" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_XhybgchUEeaPRtcG76e-Pw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_XhybgshUEeaPRtcG76e-Pw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_oJ9HoMhUEeaPRtcG76e-Pw" name="Table">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WmbpsMhYEeaPRtcG76e-Pw" name="base_Class" association="_WmcQwMhYEeaPRtcG76e-Pw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_rIfVUMhUEeaPRtcG76e-Pw" name="Primary Key">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YULk8MhYEeaPRtcG76e-Pw" name="base_Property" association="_YUMzEMhYEeaPRtcG76e-Pw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_tIYwgMhUEeaPRtcG76e-Pw" name="Foreign Key">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XaIXgMhYEeaPRtcG76e-Pw" name="base_Property" association="_XaJloMhYEeaPRtcG76e-Pw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_WmcQwMhYEeaPRtcG76e-Pw" name="E_Table_Class1" memberEnd="_WmcQwchYEeaPRtcG76e-Pw _WmbpsMhYEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_WmcQwchYEeaPRtcG76e-Pw" name="extension_Table" type="_oJ9HoMhUEeaPRtcG76e-Pw" aggregation="composite" association="_WmcQwMhYEeaPRtcG76e-Pw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_XaJloMhYEeaPRtcG76e-Pw" name="E_Foreign Key_Property1" memberEnd="_XaJlochYEeaPRtcG76e-Pw _XaIXgMhYEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_XaJlochYEeaPRtcG76e-Pw" name="extension_Foreign Key" type="_tIYwgMhUEeaPRtcG76e-Pw" aggregation="composite" association="_XaJloMhYEeaPRtcG76e-Pw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_YUMzEMhYEeaPRtcG76e-Pw" name="E_Primary Key_Property1" memberEnd="_YUMzEchYEeaPRtcG76e-Pw _YULk8MhYEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_YUMzEchYEeaPRtcG76e-Pw" name="extension_Primary Key" type="_rIfVUMhUEeaPRtcG76e-Pw" aggregation="composite" association="_YUMzEMhYEeaPRtcG76e-Pw"/>
+  </packagedElement>
+</uml:Profile>

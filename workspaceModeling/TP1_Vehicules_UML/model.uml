@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_HxXDIMhpEeaPRtcG76e-Pw" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_HxXDIchpEeaPRtcG76e-Pw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_I0nP4MhpEeaPRtcG76e-Pw" name="Client"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_JP0lMMhpEeaPRtcG76e-Pw" name="Chef d'agence"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Jn9YYMhpEeaPRtcG76e-Pw" name="Mecanicien"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_aVcCUMhpEeaPRtcG76e-Pw" name="suivre son évolution"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_eYJCwMhpEeaPRtcG76e-Pw" name="consulter les infos de sa voiture "/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_k0h3YMhpEeaPRtcG76e-Pw" name="consulter les rapports d'expertise "/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tB3sQMhpEeaPRtcG76e-Pw" name="Etablier les contrats avec les clients"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vMi0EMhpEeaPRtcG76e-Pw" name="Etablir les contrats avec les fournisseurs"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1vhY4MhpEeaPRtcG76e-Pw" name="Faire le controle financier"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_82WRoMhpEeaPRtcG76e-Pw" name="consulter l'historique des pannes"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_9MvYYMhpEeaPRtcG76e-Pw" name="rédiger et enregistrer les rapports"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CkgHQMhqEeaPRtcG76e-Pw" name="A_client_consulter les informations de sa voiture" memberEnd="_CkgHQchqEeaPRtcG76e-Pw _CkgHRMhqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CkgHQchqEeaPRtcG76e-Pw" name="client" type="_I0nP4MhpEeaPRtcG76e-Pw" association="_CkgHQMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CkgHQshqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CkgHQ8hqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CkgHRMhqEeaPRtcG76e-Pw" name="consulter les informations de sa voiture" type="_aVcCUMhpEeaPRtcG76e-Pw" association="_CkgHQMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CkgHRchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CkgHRshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DifZgMhqEeaPRtcG76e-Pw" name="A_client_suivre l'evolution dans la chaine de reparation" memberEnd="_DifZgchqEeaPRtcG76e-Pw _DifZhMhqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DifZgchqEeaPRtcG76e-Pw" name="client" type="_I0nP4MhpEeaPRtcG76e-Pw" association="_DifZgMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DifZgshqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DifZg8hqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DifZhMhqEeaPRtcG76e-Pw" name="suivre l'evolution dans la chaine de reparation" type="_eYJCwMhpEeaPRtcG76e-Pw" association="_DifZgMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DifZhchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DifZhshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EN3RwMhqEeaPRtcG76e-Pw" name="A_client_consulter les rapports d'expertise et de reparation" memberEnd="_EN3RwchqEeaPRtcG76e-Pw _EN3RxMhqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EN3RwchqEeaPRtcG76e-Pw" name="client" type="_I0nP4MhpEeaPRtcG76e-Pw" association="_EN3RwMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EN3RwshqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EN3Rw8hqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EN3RxMhqEeaPRtcG76e-Pw" name="consulter les rapports d'expertise et de reparation" type="_k0h3YMhpEeaPRtcG76e-Pw" association="_EN3RwMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EN3RxchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EN3RxshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Fv-kwMhqEeaPRtcG76e-Pw" name="A_chef d'agence_etablir les contrats avec les fournisseurs" memberEnd="_Fv-kwchqEeaPRtcG76e-Pw _Fv-kxMhqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Fv-kwchqEeaPRtcG76e-Pw" name="chef d'agence" type="_JP0lMMhpEeaPRtcG76e-Pw" association="_Fv-kwMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fv-kwshqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fv-kw8hqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Fv-kxMhqEeaPRtcG76e-Pw" name="etablir les contrats avec les fournisseurs" type="_vMi0EMhpEeaPRtcG76e-Pw" association="_Fv-kwMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fv-kxchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fv-kxshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GgJdcMhqEeaPRtcG76e-Pw" name="A_chef d'agence_etablier les contrats avec les clients" memberEnd="_GgJdcchqEeaPRtcG76e-Pw _GgJddMhqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GgJdcchqEeaPRtcG76e-Pw" name="chef d'agence" type="_JP0lMMhpEeaPRtcG76e-Pw" association="_GgJdcMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GgJdcshqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GgJdc8hqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GgJddMhqEeaPRtcG76e-Pw" name="etablier les contrats avec les clients" type="_tB3sQMhpEeaPRtcG76e-Pw" association="_GgJdcMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GgJddchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GgJddshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HepGAMhqEeaPRtcG76e-Pw" name="A_chef d'agence_faire le controle financier" memberEnd="_HepGAchqEeaPRtcG76e-Pw _HepGBMhqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HepGAchqEeaPRtcG76e-Pw" name="chef d'agence" type="_JP0lMMhpEeaPRtcG76e-Pw" association="_HepGAMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HepGAshqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HepGA8hqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HepGBMhqEeaPRtcG76e-Pw" name="faire le controle financier" type="_1vhY4MhpEeaPRtcG76e-Pw" association="_HepGAMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HepGBchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HepGBshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IVXSoMhqEeaPRtcG76e-Pw" name="A_mecanicien_gerer le parking" memberEnd="_IVXSochqEeaPRtcG76e-Pw _IVXSpMhqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IVXSochqEeaPRtcG76e-Pw" name="mecanicien" type="_Jn9YYMhpEeaPRtcG76e-Pw" association="_IVXSoMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IVXSoshqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IVXSo8hqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IVXSpMhqEeaPRtcG76e-Pw" name="gerer le parking" type="_82WRoMhpEeaPRtcG76e-Pw" association="_IVXSoMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IVXSpchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IVXSpshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JCTRIMhqEeaPRtcG76e-Pw" name="A_mecanicien_consulter l'historique des pannes" memberEnd="_JCT4MMhqEeaPRtcG76e-Pw _JCT4M8hqEeaPRtcG76e-Pw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JCT4MMhqEeaPRtcG76e-Pw" name="mecanicien" type="_Jn9YYMhpEeaPRtcG76e-Pw" association="_JCTRIMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCT4MchqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCT4MshqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JCT4M8hqEeaPRtcG76e-Pw" name="consulter l'historique des pannes" type="_9MvYYMhpEeaPRtcG76e-Pw" association="_JCTRIMhqEeaPRtcG76e-Pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCT4NMhqEeaPRtcG76e-Pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCT4NchqEeaPRtcG76e-Pw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VLODINLQEeaTeuCv1Pxc_Q" name="effectuer le test de vérification"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YERT4NLQEeaTeuCv1Pxc_Q" memberEnd="_YE4X4NLQEeaTeuCv1Pxc_Q _YE4-8NLQEeaTeuCv1Pxc_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YEpuYNLQEeaTeuCv1Pxc_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YEqVcNLQEeaTeuCv1Pxc_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YE4X4NLQEeaTeuCv1Pxc_Q" name="client" type="_I0nP4MhpEeaPRtcG76e-Pw" association="_YERT4NLQEeaTeuCv1Pxc_Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YE4-8NLQEeaTeuCv1Pxc_Q" name="effectuer le test de vérification" type="_VLODINLQEeaTeuCv1Pxc_Q" association="_YERT4NLQEeaTeuCv1Pxc_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nC-H0NLQEeaTeuCv1Pxc_Q" name="émettre les ordres aux manteniciens"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nyuw0NLQEeaTeuCv1Pxc_Q" memberEnd="_nyv-8dLQEeaTeuCv1Pxc_Q _nyv-8tLQEeaTeuCv1Pxc_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nyvX4NLQEeaTeuCv1Pxc_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nyv-8NLQEeaTeuCv1Pxc_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nyv-8dLQEeaTeuCv1Pxc_Q" name="chef d'agence" type="_JP0lMMhpEeaPRtcG76e-Pw" association="_nyuw0NLQEeaTeuCv1Pxc_Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nyv-8tLQEeaTeuCv1Pxc_Q" name="usecase1" type="_nC-H0NLQEeaTeuCv1Pxc_Q" association="_nyuw0NLQEeaTeuCv1Pxc_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_SX-qANLREeaTeuCv1Pxc_Q" name="pr chaque panne enregistrer les pièces rechangées"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fU1iANLREeaTeuCv1Pxc_Q" memberEnd="_fU2wIdLREeaTeuCv1Pxc_Q _fU3XMNLREeaTeuCv1Pxc_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fU2JENLREeaTeuCv1Pxc_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fU2wINLREeaTeuCv1Pxc_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fU2wIdLREeaTeuCv1Pxc_Q" name="pr chaque panne enregistrer les pièces rechangées" type="_SX-qANLREeaTeuCv1Pxc_Q" association="_fU1iANLREeaTeuCv1Pxc_Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fU3XMNLREeaTeuCv1Pxc_Q" name="mecanicien" type="_Jn9YYMhpEeaPRtcG76e-Pw" association="_fU1iANLREeaTeuCv1Pxc_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_gScZwNLREeaTeuCv1Pxc_Q" name="enregistrer les détails des réparations "/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mjh9UNLREeaTeuCv1Pxc_Q" memberEnd="_mjjLcdLREeaTeuCv1Pxc_Q _mjjLctLREeaTeuCv1Pxc_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mjikYNLREeaTeuCv1Pxc_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mjjLcNLREeaTeuCv1Pxc_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mjjLcdLREeaTeuCv1Pxc_Q" name="enregistrer les détails des réparations " type="_gScZwNLREeaTeuCv1Pxc_Q" association="_mjh9UNLREeaTeuCv1Pxc_Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mjjLctLREeaTeuCv1Pxc_Q" name="mecanicien" type="_Jn9YYMhpEeaPRtcG76e-Pw" association="_mjh9UNLREeaTeuCv1Pxc_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nWAjINLREeaTeuCv1Pxc_Q" name="gérer le parcking "/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oOfDQNLREeaTeuCv1Pxc_Q" memberEnd="_oOfqUtLREeaTeuCv1Pxc_Q _oOgRYNLREeaTeuCv1Pxc_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oOfqUNLREeaTeuCv1Pxc_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oOfqUdLREeaTeuCv1Pxc_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oOfqUtLREeaTeuCv1Pxc_Q" name="mecanicien" type="_Jn9YYMhpEeaPRtcG76e-Pw" association="_oOfDQNLREeaTeuCv1Pxc_Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oOgRYNLREeaTeuCv1Pxc_Q" name="usecase1" type="_nWAjINLREeaTeuCv1Pxc_Q" association="_oOfDQNLREeaTeuCv1Pxc_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pPf0UNLREeaTeuCv1Pxc_Q" name="gérer et affecter les pièces de rechange "/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_p2MA4NLREeaTeuCv1Pxc_Q" memberEnd="_p2Mn8tLREeaTeuCv1Pxc_Q _p2NPANLREeaTeuCv1Pxc_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p2Mn8NLREeaTeuCv1Pxc_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p2Mn8dLREeaTeuCv1Pxc_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_p2Mn8tLREeaTeuCv1Pxc_Q" name="mecanicien" type="_Jn9YYMhpEeaPRtcG76e-Pw" association="_p2MA4NLREeaTeuCv1Pxc_Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_p2NPANLREeaTeuCv1Pxc_Q" name="usecase2" type="_pPf0UNLREeaTeuCv1Pxc_Q" association="_p2MA4NLREeaTeuCv1Pxc_Q"/>
+  </packagedElement>
+</uml:Model>

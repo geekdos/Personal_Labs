@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RootElement="http:///schemas/RootElement/_7tZZ8NNIEeaa9fU1dv303A/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/RootElement/_7tZZ8NNIEeaa9fU1dv303A/0 ../../VumlProfile/model.profile.uml#_7tdrYNNIEeaa9fU1dv303A">
+  <uml:Model xmi:id="_Kl-XwNNJEeaa9fU1dv303A" name="RootElement">
+    <packageImport xmi:id="_Knrn8NNJEeaa9fU1dv303A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nzs2MNNJEeaa9fU1dv303A" name="Voiture_Base">
+      <ownedAttribute xmi:id="_xcipYNPxEeac6syjy_OCnw" name="ppppppppppppppppppppppppppabc" type="_wN5E8NPxEeac6syjy_OCnw" association="_xcF9cNPxEeac6syjy_OCnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_B_AFcNNKEeaa9fU1dv303A" name="Client_View">
+      <generalization xmi:id="_kbhCUNNdEeaa9fU1dv303A" general="_Sk0tkNNdEeaa9fU1dv303A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_F9Hg0NNKEeaa9fU1dv303A" name="ChefDagence_View">
+      <generalization xmi:id="_jcXScNNdEeaa9fU1dv303A" general="_Sk0tkNNdEeaa9fU1dv303A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_He2ZUNNKEeaa9fU1dv303A" name="Mecanicien_View">
+      <generalization xmi:id="_j6eKwNNdEeaa9fU1dv303A" general="_Sk0tkNNdEeaa9fU1dv303A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_p_2vQNNKEeaa9fU1dv303A" client="_F9Hg0NNKEeaa9fU1dv303A" supplier="_nzs2MNNJEeaa9fU1dv303A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_z_-wYNNKEeaa9fU1dv303A" client="_He2ZUNNKEeaa9fU1dv303A" supplier="_nzs2MNNJEeaa9fU1dv303A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_1BMVwNNKEeaa9fU1dv303A" client="_B_AFcNNKEeaa9fU1dv303A" supplier="_nzs2MNNJEeaa9fU1dv303A"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Sk0tkNNdEeaa9fU1dv303A" name="Personne_normale">
+      <ownedAttribute xmi:id="_ZOX-ANNpEeaa9fU1dv303A" name="nom" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p1tjsNNpEeaa9fU1dv303A" name="prenom">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_4EO5oNPyEeac6syjy_OCnw" name="iLoveFaty" visibility="private"/>
+      <ownedOperation xmi:id="_CddXQNPzEeac6syjy_OCnw" name="iHateIntissarLa9arda" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wN5E8NPxEeac6syjy_OCnw" name="Class1_normale"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xcF9cNPxEeac6syjy_OCnw" memberEnd="_xcipYNPxEeac6syjy_OCnw _xcj3gNPxEeac6syjy_OCnw">
+      <eAnnotations xmi:id="_xceX8NPxEeac6syjy_OCnw" source="org.eclipse.papyrus">
+        <details xmi:id="_xcfmENPxEeac6syjy_OCnw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:id="_xcj3gNPxEeac6syjy_OCnw" name="kkkkkkkkkkkkkxyz" type="_nzs2MNNJEeaa9fU1dv303A" association="_xcF9cNPxEeac6syjy_OCnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_gzvcYNP3Eeac6syjy_OCnw" name="Actor1"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_h2yNwNP3Eeac6syjy_OCnw" name="nnnn"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jVx7UNP3Eeac6syjy_OCnw" memberEnd="_jVzwgNP3Eeac6syjy_OCnw _jVzwgdP3Eeac6syjy_OCnw">
+      <eAnnotations xmi:id="_jVzJcNP3Eeac6syjy_OCnw" source="org.eclipse.papyrus">
+        <details xmi:id="_jVzJcdP3Eeac6syjy_OCnw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:id="_jVzwgNP3Eeac6syjy_OCnw" name="nnnn" type="_h2yNwNP3Eeac6syjy_OCnw" association="_jVx7UNP3Eeac6syjy_OCnw"/>
+      <ownedEnd xmi:id="_jVzwgdP3Eeac6syjy_OCnw" name="actor1" type="_gzvcYNP3Eeac6syjy_OCnw" association="_jVx7UNP3Eeac6syjy_OCnw"/>
+    </packagedElement>
+    <profileApplication xmi:id="_aYKeINNJEeaa9fU1dv303A">
+      <eAnnotations xmi:id="_aYQkwNNJEeaa9fU1dv303A" source="PapyrusVersion">
+        <details xmi:id="_aYQkwdNJEeaa9fU1dv303A" key="Version" value="0.0.1"/>
+        <details xmi:id="_aYQkwtNJEeaa9fU1dv303A" key="Comment" value=""/>
+        <details xmi:id="_aYQkw9NJEeaa9fU1dv303A" key="Copyright" value=""/>
+        <details xmi:id="_aYQkxNNJEeaa9fU1dv303A" key="Date" value="2017-01-05"/>
+        <details xmi:id="_aYQkxdNJEeaa9fU1dv303A" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_aYPWoNNJEeaa9fU1dv303A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../../VumlProfile/model.profile.uml#_7tdrYNNIEeaa9fU1dv303A"/>
+      </eAnnotations>
+      <appliedProfile href="../../VumlProfile/model.profile.uml#_I7N7kNNIEeaa9fU1dv303A"/>
+    </profileApplication>
+  </uml:Model>
+  <RootElement:Base xmi:id="_uoiAANNJEeaa9fU1dv303A" base_Class="_nzs2MNNJEeaa9fU1dv303A"/>
+  <RootElement:View xmi:id="_LZ3dYNNKEeaa9fU1dv303A" base_Class="_F9Hg0NNKEeaa9fU1dv303A"/>
+  <RootElement:View xmi:id="_MK6f0NNKEeaa9fU1dv303A" base_Class="_He2ZUNNKEeaa9fU1dv303A"/>
+  <RootElement:View xmi:id="_OwLR4NNKEeaa9fU1dv303A" base_Class="_B_AFcNNKEeaa9fU1dv303A"/>
+  <RootElement:ViewExtension xmi:id="_ymhDENNKEeaa9fU1dv303A" base_Dependency="_p_2vQNNKEeaa9fU1dv303A"/>
+  <RootElement:ViewExtension xmi:id="_0k0i0NNKEeaa9fU1dv303A" base_Dependency="_z_-wYNNKEeaa9fU1dv303A"/>
+  <RootElement:ViewExtension xmi:id="_1uZaANNKEeaa9fU1dv303A" base_Dependency="_1BMVwNNKEeaa9fU1dv303A"/>
+</xmi:XMI>
