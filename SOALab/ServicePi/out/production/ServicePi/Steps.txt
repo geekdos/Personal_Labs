@@ -1,0 +1,11 @@
+1 - La puplication
+    --> creation d'un class publication et qui contien un
+        --> Endpoint qui prend le url du service
+
+2 - le deplpoiment du service avec la methode main qui intern dans la class publication
+
+3 - la generation des class de service avec la commande
+-- wsimport -d src -keep -p Client http://localhost:8088/caculpi?wsdl
+
+dans le repertoir qui contien le project
+4 - la creation du client
