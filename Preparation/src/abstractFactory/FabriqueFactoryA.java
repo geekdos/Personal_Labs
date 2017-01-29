@@ -3,7 +3,7 @@ package abstractFactory;
 /**
  * Created by theXuser on 1/29/2017.
  */
-public class FabriqueFactoryA extends FabriqueFactory{
+public class FabriqueFactoryA extends AbstractFactory {
 
     @Override
     public AbstractClass creatClass() {

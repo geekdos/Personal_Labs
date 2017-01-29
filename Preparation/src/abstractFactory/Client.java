@@ -6,10 +6,10 @@ package abstractFactory;
 public class Client {
     public static void main(String[] args){
 
-        FabriqueFactory fabriqueFactoryA = new FabriqueFactoryA();
-        FabriqueFactory fabriqueFactoryB = new FabriqueFactoryB();
-        AbstractClass classA = fabriqueFactoryA.creatClass();
-        AbstractClass classB = fabriqueFactoryB.creatClass();
+        AbstractFactory abstractFactoryA = new FabriqueFactoryA();
+        AbstractFactory abstractFactoryB = new FabriqueFactoryB();
+        AbstractClass classA = abstractFactoryA.creatClass();
+        AbstractClass classB = abstractFactoryB.creatClass();
 
         classA.affcher();
         classB.affcher();
