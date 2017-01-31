@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<struts>
+	<package name="default" exdends="struts-default">
+		<action name="getTutorial" class="com.geekdoos.action.TutorialAction">
+			<result name="success">/seccess.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+	</package>
+</struts>

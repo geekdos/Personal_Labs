@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_QvLNUMhWEeatmvDaRpeomQ" name="RootElement" metaclassReference="_Ddth0MhXEeatmvDaRpeomQ">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RFfwsMhYEeatmvDaRpeomQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_RFg-0MhYEeatmvDaRpeomQ" name="RootElement" nsURI="http:///schemas/RootElement/_RFeikMhYEeatmvDaRpeomQ/0" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RFjbEMhYEeatmvDaRpeomQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RFjbEchYEeatmvDaRpeomQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RFjbEshYEeatmvDaRpeomQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RFjbE8hYEeatmvDaRpeomQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RFjbFMhYEeatmvDaRpeomQ" key="Date" value="2016-12-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RFjbFchYEeatmvDaRpeomQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RFg-0chYEeatmvDaRpeomQ" name="Table">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RFg-0shYEeatmvDaRpeomQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Fark0MhXEeatmvDaRpeomQ"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_Ddth0MhXEeatmvDaRpeomQ" alias="Class">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Fark0MhXEeatmvDaRpeomQ" name="Table"/>
+</uml:Profile>

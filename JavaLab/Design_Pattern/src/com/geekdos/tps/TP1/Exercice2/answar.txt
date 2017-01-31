@@ -1,0 +1,18 @@
+1 - Les constructeurs de Images et de ImageOps sont déclarés private
+pour empécher les utilisateur de instancier les class Image et ImageOps
+2 - La solution de conception permettant, de pouvoir appliquer indifféremment
+n'importe quel filtre à une image et de crée un class pour chaque filtre
+3 - ce design pattern s'appel Factory Method
+public static BufferedImage createFilter(String name){
+    if (name.equals("blur")){
+        return blur();
+    }else if (name.equals("gray")){
+    }else if (name.equals("rotate")){
+
+    }else {
+        System.out.println("Ce filter demander n'exicte pas");
+    }
+
+}
+
+4 -

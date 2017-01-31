@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.geekdos.cours.Observer.Observer">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="235" y="20" width="285" height="42"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="4b6d9" class="javax.swing.JRadioButton" binding="red">
+        <constraints/>
+        <properties>
+          <text value="Red"/>
+        </properties>
+      </component>
+      <component id="bfade" class="javax.swing.JRadioButton" binding="green">
+        <constraints/>
+        <properties>
+          <text value="Green"/>
+        </properties>
+      </component>
+      <component id="bc896" class="javax.swing.JRadioButton" binding="blue">
+        <constraints/>
+        <properties>
+          <text value="Blue"/>
+        </properties>
+      </component>
+      <component id="845f2" class="javax.swing.JButton" binding="go">
+        <constraints/>
+        <properties>
+          <text value="Go"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="colors">
+      <member id="4b6d9"/>
+      <member id="4b6d9"/>
+      <member id="bfade"/>
+      <member id="bc896"/>
+    </group>
+  </buttonGroups>
+</form>
