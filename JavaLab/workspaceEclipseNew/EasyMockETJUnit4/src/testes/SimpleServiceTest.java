@@ -1,6 +1,9 @@
 package testes;
 
 import static org.junit.Assert.*;
+
+import javax.swing.plaf.ViewportUI;
+
 import static org.easymock.EasyMock.*;
 import org.junit.After;
 import org.junit.Before;
@@ -28,8 +31,27 @@ public class SimpleServiceTest {
 
 	@Test
 	public void testInsert() {
+		expect(simpleDaoMock.isValid("Arthur")).andReturn(true);
+		simpleDaoMock.insert("Arthur"); // doing the insert to call the isValid() method
+		
+		replay(simpleDaoMock);
+		
+		simpleService.insert("Arthur");
+		
+		verify(simpleDaoMock);
 	}
 
+	@Test
+	public void insertNotValid(){
+		expect(simpleDaoMock.isValid("Arthur")).andReturn(false); // without the insert
+		
+		replay(simpleDaoMock);
+		
+		simpleService.insert("Arthur");
+		
+		verify(simpleDaoMock);
+	}
+	
 	@Test
 	public void testSave() {
 		simpleDaoMock.save("xyzzy");
