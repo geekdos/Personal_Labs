@@ -23,8 +23,14 @@ public class OperationsTest {
 	@Test
 	public void mutiplicationAvecDeuxNombres() {
 		final long lMultiplication = Operations.multiplier(10, 20, 10);
-		
+
 		assertEquals(2000, lMultiplication);
+	}
+
+	@Test
+	public void testMutiplicationAvecCinqNombres() {
+		final long lMultiplication = Operations.additionner(256, 512, 1024, 2048, 4096);
+		//assertEquals(1125899906842624L, lMultiplication); give's you a red bare
 	}
 
 }
