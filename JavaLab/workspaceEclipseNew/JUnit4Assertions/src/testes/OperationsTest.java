@@ -22,9 +22,9 @@ public class OperationsTest {
 
 	@Test
 	public void mutiplicationAvecDeuxNombres() {
-		final long lMultiplication = Operations.multiplier(10, 20);
+		final long lMultiplication = Operations.multiplier(10, 20, 10);
 		
-		assertEquals(200, lMultiplication);
+		assertEquals(2000, lMultiplication);
 	}
 
 }
