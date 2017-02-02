@@ -50,7 +50,8 @@ public class SimpleServiceTest {
 		simpleDaoMock.save("xyzzy");
 		
 		expectLastCall().times(5); // La methode save() doit etre appeler 5 fois
-		expectLastCall().anyTimes(); // Le nomber des appeles de la methode save() est indéfini
+		// expectLastCall().anyTimes(); // Le nomber des appeles de la methode save() est indéfini
+		// expectLastCall().times(0, 6); // La methode save() doit etre appeler un nomber de fois entre 0 et 6
 		
 		replay(simpleDaoMock);
 		
