@@ -36,7 +36,7 @@ public class SommeArgentTest {
 	
 	@Test(expected = UniteDistincteException.class)
 	public void testAddWithExeption() throws UniteDistincteException{
-		SommeArgent sumArg1 = new SommeArgent(10, "EURO");
+		SommeArgent sumArg1 = new SommeArgent(10, "DURO");
 		SommeArgent sumArg2 = new SommeArgent(10, "DMA");
 		
 		SommeArgent rerult = sumArg1.add(sumArg2);
