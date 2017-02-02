@@ -1,6 +1,10 @@
 package project;
 
 public class UniteDistincteException extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private SommeArgent somme1, somme2;
 
 	public UniteDistincteException(SommeArgent sa1, SommeArgent sa2) {

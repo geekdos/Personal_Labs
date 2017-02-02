@@ -34,6 +34,18 @@ public class SommeArgentTest {
 		//assertEquals(expected, som1.add(som2));
 	}
 	
+	@Test(expected = UniteDistincteException.class)
+	public void testAddWithExeption() throws UniteDistincteException{
+		SommeArgent sumArg1 = new SommeArgent(10, "EURO");
+		SommeArgent sumArg2 = new SommeArgent(10, "DMA");
+		
+		SommeArgent rerult = sumArg1.add(sumArg2);
+		SommeArgent expected = new SommeArgent(20, "EURO");
+		
+		assertTrue(expected.equals(rerult));
+		
+	}
+	
 	@Test
 	public void testEquals(){		
 		assertTrue(!som1.equals(null));
