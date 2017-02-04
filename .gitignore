@@ -286,3 +286,21 @@ obj/
 
 # End of https://www.gitignore.io/api/symfony,laravel,git,phpstorm,leiningen,intellij,windows,linux,codeblocks
 /Cygwin
+/NetBeansProjects/ServiceInscription/nbproject/private/
+/NetBeansProjects/ServiceInscription/build/
+/NetBeansProjects/DVDStore/nbproject/private/
+/NetBeansProjects/DVDStore/build/
+/NetBeansProjects/DVDStore/dist/
+/NetBeansProjects/InscriptionWebService/nbproject/private/
+
+# Created by https://www.gitignore.io/api/netbeans
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# End of https://www.gitignore.io/api/netbeans
