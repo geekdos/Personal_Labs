@@ -40,5 +40,5 @@ made subject to such option by the copyright holder.
 Contributor(s):
 -->
 <hibernate-mapping>
-  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.geekdos.beans.Etudiant" optimistic-lock="version" polymorphism="implicit" select-before-update="false"/>
+  <class name="com.geekdos.beans.Etudiant" table="etudiant"/>
 </hibernate-mapping>

@@ -12,18 +12,21 @@ import java.util.Objects;
  * @author theXuser
  */
 public class Etudiant {
+    private int id;
     private String nom;
     private String prenom;
-    private String cne;
     private String niveau;
 
-    public Etudiant(String nom, String prenom, String cne, String niveau) {
+    public Etudiant(String nom, String prenom, String niveau) {
         this.nom = nom;
         this.prenom = prenom;
-        this.cne = cne;
         this.niveau = niveau;
     }
 
+    public int getId() {
+        return id;
+    }
+    
     public String getNom() {
         return nom;
     }
@@ -40,14 +43,6 @@ public class Etudiant {
         this.prenom = prenom;
     }
 
-    public String getCne() {
-        return cne;
-    }
-
-    public void setCne(String cne) {
-        this.cne = cne;
-    }
-
     public String getNiveau() {
         return niveau;
     }
@@ -58,11 +53,11 @@ public class Etudiant {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 53 * hash + Objects.hashCode(this.nom);
-        hash = 53 * hash + Objects.hashCode(this.prenom);
-        hash = 53 * hash + Objects.hashCode(this.cne);
-        hash = 53 * hash + Objects.hashCode(this.niveau);
+        int hash = 3;
+        hash = 29 * hash + this.id;
+        hash = 29 * hash + Objects.hashCode(this.nom);
+        hash = 29 * hash + Objects.hashCode(this.prenom);
+        hash = 29 * hash + Objects.hashCode(this.niveau);
         return hash;
     }
 
@@ -78,13 +73,13 @@ public class Etudiant {
             return false;
         }
         final Etudiant other = (Etudiant) obj;
+        if (this.id != other.id) {
+            return false;
+        }
         if (!Objects.equals(this.nom, other.nom)) {
             return false;
         }
         if (!Objects.equals(this.prenom, other.prenom)) {
-            return false;
-        }
-        if (!Objects.equals(this.cne, other.cne)) {
             return false;
         }
         if (!Objects.equals(this.niveau, other.niveau)) {
@@ -95,6 +90,8 @@ public class Etudiant {
 
     @Override
     public String toString() {
-        return "Etudiant{" + "nom=" + nom + ", prenom=" + prenom + ", cne=" + cne + ", niveau=" + niveau + '}';
+        return "Etudiant{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", niveau=" + niveau + '}';
     }
+    
+    
 }
