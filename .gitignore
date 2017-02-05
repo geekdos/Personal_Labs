@@ -305,3 +305,9 @@ nbdist/
 
 # End of https://www.gitignore.io/api/netbeans
 /NetBeansProjects/ServiceWebInscription/nbproject/private/
+/NetBeansProjects/ServiceWebGestionAbsence/nbproject/private/
+/NetBeansProjects/WebApplicationRest/nbproject/private/
+/NetBeansProjects/ServiceWebInscription1/nbproject/private/
+/NetBeansProjects/WebServiceRESTApplication/nbproject/private/
+/NetBeansProjects/ServiceWebRESTInscription/nbproject/private/
+/NetBeansProjects/ServiceWebBibliotheque/nbproject/private/
